@@ -1,0 +1,37 @@
+.profits {
+    min-height: 893px;
+    background: radial-gradient(100% 100% at 18.54% 0%, $cloudy-sky 20.83%, $pastel-yellow 46.35%, $amaranth 86.98%);
+    border-radius: 0px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        width: 556px;
+    }
+
+    &__title {
+        @include font(12px, 17px);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+
+    &__text-title {
+        @include font(72px, 86px);
+        margin: 0 0 35px;
+        width: 482px;
+    }
+
+    &__text {
+        @include font (24px, 36px);
+    }
+
+    &__image {
+        margin: 152px 0;
+    }
+}

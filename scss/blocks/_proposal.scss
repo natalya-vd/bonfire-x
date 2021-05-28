@@ -1,0 +1,73 @@
+.proposal {
+    &__text {
+        @include font(12px, 17px);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+    }
+
+    &__heading {
+        @include font(72px, 86px);
+        margin: 0 0 71px;
+        width: 654px;
+    }
+
+    &__list-selling {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 182px;
+    }
+
+    &__item-selling {
+        width: 576px;
+        filter: drop-shadow(8px 16px 36px rgba(61, 72, 83, 0.2));
+    }
+
+    &__item-selling-text {
+        @include font(24px, 36px);
+        margin: 0 0 96px;
+        width: 493px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 141px;
+    }
+
+    &__item {
+        width: 370px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            top: -48px;
+            border-radius: 36px;
+        }
+
+        &_amaranth::before {
+            background-color: $amaranth;
+        }
+
+        &_blue::before {
+            background-color: $blue;
+        }
+
+        &_linen::before {
+            background-color: $linen;
+        }
+    }
+
+    &__item-heading {
+        @include font(36px, 48px);
+        margin: 0 0 24px;
+        width: 315px;
+    }
+
+    &__item-text {
+        @include font(16px, 26px);
+    }
+}

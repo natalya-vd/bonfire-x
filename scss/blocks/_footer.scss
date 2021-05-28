@@ -1,0 +1,14 @@
+.footer {
+    background-color: $dark-grey;
+}
+
+.join {
+    padding: 120px 0 185px;
+    display: flex;
+
+    &__text {
+        @include font(64px, 72px);
+        color: $white;
+        width: 663px;
+    }
+}

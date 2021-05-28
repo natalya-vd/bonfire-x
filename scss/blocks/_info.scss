@@ -1,0 +1,150 @@
+.info {
+    background-color: $black;
+
+    &__slogan {
+        width: 941px;
+        @include font(157px, 163px);
+        background: radial-gradient(50% 50% at 50% 50%, $orange 0%, $desert-sand 50.52%, $blue 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin: 0 0 91px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        min-height: 440px;
+        margin: 0 0 124px;
+    }
+
+    &__item-center {
+        align-self: center;
+    }
+
+    &__item-end {
+        align-self: flex-end;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__text {
+        width: 742px;
+        @include font(36px, 58px);
+        background: radial-gradient(50% 50% at 50% 50%, $orange 0%, $desert-sand 50.52%, $blue 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin: 0 auto 21px;
+        text-align: center;
+    }
+
+    &__link {
+        @include font(13px, 14px);
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $dark-grey;
+        background: $white;
+        border-radius: 5px;
+        padding: 16px 24px;
+        margin: 0 auto 120px;
+        display: block;
+        width: 182px;
+    }
+
+    &__phone{
+        background-image: url(../img/tel.png);
+        background-repeat: no-repeat;
+        width: 795px;
+        height: 400px;
+        margin: 0 0 96px 116px;
+        padding: 31px 39px 43px 55px;
+        position: relative;
+
+        &-logo {
+            display: block;
+            width: 65px;
+            height: 65px;
+            background-color: $light-black;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 0 25px;
+
+            &::before {
+                content: '';
+                width: 27px;
+                height: 32px;
+                position: absolute;
+                background-image: url(../img/logo.svg);
+                top: 0;
+                top: 18px;
+                left: 18px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &-title {
+            width: 266px;
+            @include font(68px, 68px);
+            font-family: 'Pacifico';
+            background: radial-gradient(50% 50% at 50% 50%, $orange 0%, $desert-sand 50.52%, $blue 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            margin: 0 0 42px;
+        }
+
+        &-list {
+            display: flex;
+            color: $white;
+        }
+
+        &-item {
+            width: 200px;
+        }
+
+        &-item + &-item {
+            border-left: 1px dashed #797979;
+            padding: 0 0 0 24px;
+        }
+
+        &-item-title {
+            font-family: 'Pacifico';
+            @include font(13px, 13px);
+            margin: 0 0 14px;
+        }
+
+        &-item-text {
+            @include font(22px, 22px);
+        }
+
+        &-list-transform {
+            color: $light-grey;
+            display: flex;
+            transform: rotate(-90deg);
+            width: 340px;
+            position: absolute;
+            right: -90px;
+            justify-content: space-between;
+            bottom: 168px;
+            font-size: 18px;
+            letter-spacing: 4px;
+            border-top: 2px dashed $light-grey;
+            padding: 38px 0 0;
+            text-transform: uppercase;
+        }
+    }
+
+    &__phone-img {
+        margin: 0 0 120px 337px;
+    }
+}
